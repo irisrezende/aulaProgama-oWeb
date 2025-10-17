@@ -1,0 +1,26 @@
+// Espera o documento HTML ser completamente carregado antes de executar o script
+document.addEventListener('DOMContentLoaded', function() {
+
+    // Encontra o botão pelo ID
+    const ctaButton = document.getElementById('cta-button');
+
+    // Verifica se o botão existe
+    if (ctaButton) {
+        // Adiciona um "ouvinte de evento" de clique
+        ctaButton.addEventListener('click', function() {
+            // Em vez de um alerta, vamos rolar a página suavemente para a seção #adote
+            
+            // Encontra a seção de adoção
+            const adoteSection = document.getElementById('adote');
+            
+            if (adoteSection) {
+                // Rola a tela até a seção
+                adoteSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
+
+    // Exemplo de log no console (Pressione F12 no navegador para ver)
+    console.log('Site da ONG Patinhas Felizes carregado com sucesso!');
+
+});
