@@ -1,38 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF=8">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0"
-    <title>Ruan louco</title>
-    <head>
-    <body>
-<header>
-    <h1>Como é a nossa Organização</h1>
-    <nav>
-        <ul>
-         <li><a href="index.html''>Inicio</a></li>
-         <li><a href="projeto.html">Projeto de voluntáriado</a></li>
-         <li><a href="cadastro.html">Cadastro de voluntáriado</a></li>
-        </ul>   
-    </nav>
- </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Patinhas Felizes - Resgate e Adoção</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
- <main>
-    <section>
-        <h2>Quem somos</h2>
-        <p>Somos uma organização sem fins lucrativos que atua em atendimento de familias em inclusão social</p>
-        <img src="aula.jpeg" alt="voluntários em ação">
-    </section>
+    <header>
+        <div class="container">
+            <h1>ONG Patinhas Felizes</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#adote">Adote</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <section>
-        <h3>Fale conosco</h3>
-        <address>
-            <p>Endereço: Brasília - DF, Asa Norte 713, Bloco c, Sala 13</p>
-            <p>Telefones(61)9856423467 / (61) 336548984</p>
-            <p>Email: organizaçãofamiliasinclusas.org.com</p>
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>Ajude um animal a encontrar um lar</h2>
+                <p>Resgatamos, cuidamos e preparamos cães e gatos para uma nova vida. Encontre seu novo melhor amigo!</p>
+                
+                <img src="https://source.unsplash.com/random/900x400/?happy,dog" alt="Cachorro feliz sendo resgatado">
+                
+                <button id="cta-button">Quero Adotar!</button>
+            </div>
+        </section>
 
-           </address>
-    </section>
- </main>
- </body>
- </html>
+        <section id="sobre">
+            <div class="container">
+                <h2>Nossa Missão</h2>
+                <p>A ONG Patinhas Felizes é dedicada ao resgate de animais em situação de risco, oferecendo cuidados veterinários, reabilitação e um lar temporário seguro até que encontrem uma família permanente e amorosa. Acreditamos que toda vida importa.</p>
+            </div>
+        </section>
+
+        <section id="adote">
+            <div class="container">
+                <h2>Animais para Adoção</h2>
+                <div class="galeria-animais">
+                    <div class="animal-card">
+                        <img src="https://source.unsplash.com/random/300x300/?dog,portrait" alt="Cachorro para adoção">
+                        <h3>Rex</h3>
+                        <p>Macho, 2 anos, Vacinado</p>
+                    </div>
+                    <div class="animal-card">
+                        <img src="https://source.unsplash.com/random/300x300/?cat,portrait" alt="Gato para adoção">
+                        <h3>Mimi</h3>
+                        <p>Fêmea, 1 ano, Castrada</p>
+                    </div>
+                    <div class="animal-card">
+                        <img src="https://source.unsplash.com/random/300x300/?puppy" alt="Filhote para adoção">
+                        <h3>Totó</h3>
+                        <p>Macho, 4 meses, Vacinado</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato">
+        <div class="container">
+            <div class="contact-info">
+                <h3>Entre em Contato</h3>
+                <p>Endereço: SBN Quadra 2, Bloco F, Lote 12 - Asa Norte (Endereço Fictício)</p>
+                <p>Brasília - DF, 70040-908</p>
+                <p>Telefone: (61) 99999-0000 (Fictício)</p>
+                <p>Email: contato@patinhasfelizes.org</p>
+            </div>
+            <p class="copyright">&copy; 2025 ONG Patinhas Felizes. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
