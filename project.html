@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos | ONG Vidas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Cabeçalho e Navegação -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-teal-600">ONG Vidas</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-teal-600">Início</a>
+                <a href="projetos.html" class="text-gray-600 hover:text-teal-600 font-semibold border-b-2 border-teal-600 pb-1">Projetos</a>
+                <a href="cadastro.html" class="text-gray-600 hover:text-teal-600">Cadastro</a>
+            </div>
+             <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 text-gray-600 hover:bg-gray-100 rounded">Início</a>
+            <a href="projetos.html" class="block py-2 text-gray-600 font-semibold hover:bg-gray-100 rounded">Projetos</a>
+            <a href="cadastro.html" class="block py-2 text-gray-600 hover:bg-gray-100 rounded">Cadastro</a>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto px-6 py-12">
+
+        <section class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Nossos Projetos e Como Ajudar</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Sua ajuda é fundamental para continuarmos nosso trabalho. Veja como você pode se envolver e fazer a diferença.
+            </p>
+        </section>
+
+        <!-- Seção de Voluntariado -->
+        <section id="voluntario" class="mb-16 bg-white p-8 md:p-12 rounded-lg shadow-lg">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <figure>
+                    <img src="https://placehold.co/600x400/818cf8/ffffff?text=Voluntariado" alt="[Grupo de voluntários sorrindo]" class="rounded-lg w-full h-auto">
+                </figure>
+                <article>
+                    <h2 class="text-3xl font-bold text-indigo-600 mb-4">Seja um Voluntário</h2>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        O trabalho voluntário é a alma da nossa organização. Ao doar seu tempo e talento, você contribui diretamente para a transformação de vidas. Temos diversas áreas onde sua ajuda é bem-vinda:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 mb-6">
+                        <li>Apoio em eventos e campanhas.</li>
+                        <li>Aulas de reforço e oficinas culturais.</li>
+                        <li>Mentoria para jovens em busca do primeiro emprego.</li>
+                        <li>Auxílio em tarefas administrativas.</li>
+                    </ul>
+                    <a href="cadastro.html" class="inline-block bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-indigo-700 transition duration-300">Quero ser voluntário</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção de Doações -->
+        <section id="doar" class="mb-16">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                 <article class="md:order-2">
+                    <h2 class="text-3xl font-bold text-emerald-600 mb-4">Faça uma Doação</h2>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Sua contribuição financeira nos permite ampliar nossos projetos e alcançar mais pessoas. Qualquer valor é importante e será investido com transparência e responsabilidade.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        As doações são utilizadas para comprar materiais didáticos, alimentos, produtos de higiene e para manter a infraestrutura dos nossos espaços de atendimento.
+                    </p>
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <h4 class="font-semibold text-lg mb-3">Dados para doação (PIX):</h4>
+                        <p class="text-gray-700"><strong>Chave PIX (CNPJ):</strong> 12.345.678/0001-99</p>
+                        <p class="text-gray-700"><strong>Favorecido:</strong> ONG Vidas Transformadoras</p>
+                        <button class="mt-4 bg-emerald-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-emerald-700 transition duration-300">Copiar Chave PIX</button>
+                    </div>
+                </article>
+                 <figure class="md:order-1">
+                    <img src="https://placehold.co/600x400/34d399/ffffff?text=Doações" alt="[Mãos segurando um cofrinho com o símbolo de coração]" class="rounded-lg shadow-lg w-full h-auto">
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto px-6 py-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-2">ONG Vidas</h3>
+                    <p class="text-gray-400">Transformando Vidas, Construindo Futuros desde 2010.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Contato</h3>
+                    <address class="not-italic text-gray-400">
+                        <p>Rua da Esperança, 123, Cidade Feliz - CF</p>
+                        <p>CEP: 12345-678</p>
+                        <p>Email: <a href="mailto:contato@ongvidas.org" class="hover:text-teal-400">contato@ongvidas.org</a></p>
+                        <p>Telefone: <a href="tel:+5511999998888" class="hover:text-teal-400">(11) 99999-8888</a></p>
+                    </address>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Siga-nos</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+                        <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 text-center pt-6">
+                <p class="text-gray-500">&copy; 2024 ONG Vidas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script para menu mobile
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
